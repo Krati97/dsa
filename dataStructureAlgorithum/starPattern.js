@@ -44,5 +44,55 @@ for (let i=0; i<4; i++) {
 
 
 
+console.log("---------------------------------");
+
+for (let i = 0; i<5; i++){
+    let row = "";
+    for(let j= 0; j<=i; j++){
+        row = row + (j+1);
+    }
+    console.log(row);
+}
 
 
+// output: 
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+
+console.log("---------------------------------");
+
+for (let i = 0; i<5; i++){
+    let row = "";
+    for(let j= 0; j<=i; j++){
+        row = row + (i+1);
+    }
+    console.log(row);
+}
+
+// output: 
+// 1
+// 22
+// 333
+// 4444
+// 55555
+
+// or for the same problem you can do this: just cjange j=0 to j=1
+
+for(let i=0; i<=5; i++){
+    let row = "";
+    for(j=1; j<=i; j++){
+        row =row+i;
+    }
+    console.log(row);
+}
+
+// output: 
+// 1
+// 22
+// 333
+// 4444
+// 55555
