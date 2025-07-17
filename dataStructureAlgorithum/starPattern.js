@@ -165,3 +165,50 @@ for(let i = 0; i<5; i++){
 // 4   | 5 (i+1)  | 0 (5-(i+1))     | * * * * *
 
 console.log("---------------------------------");
+
+
+for(i=0; i<5; i++) {
+    let row = "";
+    let switchVar = 1;
+
+    for (j=0; j<=i; j++){
+        row = row + switchVar;
+        if(switchVar == 1){
+            switchVar = 0;
+        }
+        else{
+            switchVar = 1;
+        }
+    }
+    console.log(row);
+}
+
+// output: 
+
+// 1
+// 10
+// 101
+// 1010
+// 10101
+
+console.log("---------------------------------");
+let switchVar = 1; 
+for(let i=0; i<5; i++){
+    let row = "";
+    for (j=0; j<=i; j++){
+        row = row + switchVar;
+        if(switchVar == 1){
+            switchVar = 0;
+        }
+        else {switchVar = 1;}
+    }
+    console.log(row);
+}
+
+// output: 
+
+// 1
+// 01
+// 010
+// 1010
+// 10101
