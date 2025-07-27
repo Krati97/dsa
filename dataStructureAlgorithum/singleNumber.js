@@ -33,6 +33,8 @@ console.log(singleNumber([1])); // 1
 
 // Approach 2: Math
 // Use the property of XOR
+// a^a = 0
+// a^0 = a
 
 var singleNumber2 = function(nums) {
 let xor = 0;
