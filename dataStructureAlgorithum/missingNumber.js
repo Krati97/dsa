@@ -12,6 +12,7 @@ var missingNumber = function(nums) {
     let ConsecutiveSum = (largestConsecutive * (largestConsecutive + 1)) / 2
     console.log("Consecutive Sum: ", ConsecutiveSum);
 
+    // find sum of nums array
     for(let i = 0; i < nums.length; i++){
         numsSum = numsSum + nums[i];
         }
