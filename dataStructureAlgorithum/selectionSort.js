@@ -1,3 +1,5 @@
+// Selection sort Algorithm: 
+
 let arr = [4, 5, 1, 3, 9];
   
 function selectionSort(arr) {
